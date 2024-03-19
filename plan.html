@@ -1,0 +1,129 @@
+<!--127.0.0.1:5500/index.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>CNZ Tech - Plans & Pricing</title>
+</head>
+<body class="bodys">
+
+<div class="navbar">
+  <a href="index.html" class="logo-link">
+    <img src="logo.png" alt="CNZ Tech Logo" class="logo-image">
+  </a>
+  <a href="index.html"  class="navbar-link">Homepage</a>
+    <a href="about.html" class="navbar-link">About Us</a>
+    <a href="work.html"  class="navbar-link">Our Work</a>
+    <a href="https://forms.gle/QiPkCTxbm3R3reoX9"  class="navbar-link" onclick="checkPurchase()">Request A Website</a>
+    <a href="contact.html"  class="navbar-link">Contact Us</a>
+    
+</div>
+
+<div class="plans">
+  
+  <div class="plan">
+
+   
+    <h2>Basic Plan</h2>
+    <p>$24.99 (One Time Purchase!)</p>
+    <p>Key Features:</p>
+    <ul>
+        <li>Prioritized Last</li>
+        <li>Basic Website Design (Maximum of 3 Pages)</li>
+        <li>Pre-Designed Templates & Themes</li>
+        <li>Basic CSS & Customization</li>
+        <li>1 Round of Debugging</li>
+        <li>Replit Domain / Servers (Link looks unorganized and random)</li>
+    </ul>
+    <button onclick="purchaseBase()">Buy Now</button>
+  </div>
+  
+  <div class="plan">
+    <h2>Pro Plan</h2>
+    <p>$49.99 (One Time Purchase!)</p>
+    <p>Key Features:</p>
+    <ul>
+        <li>Prioritized Third</li>
+        <li>Maximum Of 7 Pages</li>
+        <li>Javascript Included!</li>
+        <li>Multiple Rounds Of Debugging (3-5)</li>
+        <li>Domains: Heroku, Vercel, Cyclic, Koyeb </li>
+        <li>Slightly More Advanced CSS Usage</li>
+    </ul>
+    <button onclick="purchasePro()">Buy Now</button>
+  </div>
+  
+  <div class="plan">
+    <h2>Premium Plan</h2>
+    <p>$99.99 (One Time Purchase!)</p>
+    <p>Key Features:</p>
+    <ul>
+        <li>Prioritized Second</li>
+        <li>Maximum of 12 Pages</li>
+        <li>Advanced CSS (Transform, Keyframes, Root)</li>
+        <li>More Rounds of Debugging (6 - 9)</li>
+        <li>Github Domains (Great Servers, Choose Main Name)</li>
+    </ul>
+    <button onclick="purchasePrem()">Buy Now</button>
+  </div>
+
+  <div class="plan">
+    <h2>Custom Plan</h2>
+    <p>$249.99 (One Time Purchase!)</p>
+    <p>Key Features:</p>
+    <ul>
+        <li>Order is Prioritized</li>
+        <li>Custom API</li>
+        <li>No Limits on Amount of Pages</li>
+        <li>No Limits on Client's Needs</li>
+        <li>Can Put in Custom Domain (Reasonable Domain price, we only pay for first month/year.)</li>
+        <li>Search Engine Optimization</li>
+        
+    </ul>
+    <button onclick="purchaseCustom()">Buy Now</button>
+  </div>
+</div>
+<h1 class="planheading">Plans & Pricing</h1>
+<style>
+    .plan {
+    width: 30%;
+    margin: 20px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+  }
+  .plan h2 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  .plan p {
+    font-size: 16px;
+  }
+  .plan button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .plans {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 16vh;
+  }
+</style>
+
+</body>
+</html>

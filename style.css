@@ -1,0 +1,158 @@
+@font-face {
+    font-family: CallingCode;
+    src: url(Fonts/CallingCode-Regular.ttf);
+}
+
+body {
+    font-family: CallingCode;
+
+}
+
+.navbar {
+   
+    padding: 10px 20px;
+    display: flex;
+    align-items: center; 
+}
+
+.logo-image {
+    width: 120px;
+    height: auto;
+    margin-right: 20px; 
+}
+
+.navbar-link {
+    margin-left: 4vw;
+    padding: 15px; 
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 12px;
+    background-color: #1366eb;
+    font-size: 1.8vh;
+}
+
+.navbar-link:hover {
+    background-color: #0e4eb5;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.01);
+}
+
+.planheading {
+    text-align: center;
+}
+
+.bodys {
+    margin-left: 2.16vw;
+}
+
+p.bodys {
+  font-size: 22.5px;
+}
+
+.paras {
+  font-size: 22.5px;
+}
+
+.image-wheel {
+    position: relative;
+    overflow-x: auto; 
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+
+    left: 14vw;
+  }
+  
+  .image-container {
+    display: inline-flex; /* Keep images aligned horizontally */
+  }
+  
+  .image-container img {
+    flex: 0 0 auto;
+    margin-right: 1.9vh; /* Adjust as needed */
+  }
+
+  .image-container video {
+    flex: 0 0 auto;
+    margin-right: 1.9vh;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .arrow.prev {
+    left: 0;
+  }
+  
+  .arrow.next {
+    right: 0;
+  }
+  
+  .trust {
+  margin-left: 40vw;
+  }
+
+  .review {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+  
+  .review .author {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .review .date {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .review .content {
+    margin-top: 10px;
+  }
+
+  .stars {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .star {
+    color: gold;
+    font-size: 20px;
+    margin-right: 5px;
+  }
+  
