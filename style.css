@@ -29,7 +29,7 @@ body {
     transition: background-color 0.3s ease, transform 0.3s ease;
     border-radius: 12px;
     background-color: #1366eb;
-    font-size: 1.8vw;
+    font-size: 1.8vh;
 }
 
 .navbar-link:hover {
