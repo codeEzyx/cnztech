@@ -71,3 +71,46 @@ window.onload = function () {
     console.log(base);
     console.log(custom);
 }
+
+
+const chatbotToggle = document.getElementById('chatbot-toggle');
+    const chatbotContainer = document.getElementById('chatbot-container');
+    const userInput = document.getElementById('user-input');
+    const chatHistory = document.getElementById('chat-history');
+
+    chatbotToggle.addEventListener('click', function() {
+        chatbotContainer.style.display = (chatbotContainer.style.display === 'none' || chatbotContainer.style.display === '') ? 'block' : 'none';
+    });
+
+    function submitQuestion() {
+        const userQuestion = userInput.value.trim();
+        if (userQuestion !== '') {
+
+            displayUserMessage(userQuestion);
+            
+    
+            displayChatbotResponse("Sorry, I cannot answer that question. If you need additional assistance, please call 917-727-9063.");
+
+            userInput.value = ''; 
+        }
+    }
+
+    function displayUserMessage(message) {
+        const messageContainer = document.createElement('div');
+        messageContainer.classList.add('message-container');
+        const userMessage = document.createElement('div');
+        userMessage.classList.add('user-message');
+        userMessage.textContent = message;
+        messageContainer.appendChild(userMessage);
+        chatHistory.appendChild(messageContainer);
+    }
+
+    function displayChatbotResponse(response) {
+        const messageContainer = document.createElement('div');
+        messageContainer.classList.add('message-container');
+        const chatbotResponse = document.createElement('div');
+        chatbotResponse.classList.add('chatbot-response');
+        chatbotResponse.textContent = response;
+        messageContainer.appendChild(chatbotResponse);
+        chatHistory.appendChild(messageContainer);
+    }
